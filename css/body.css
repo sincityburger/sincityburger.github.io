@@ -1,0 +1,31 @@
+#order-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  
+  .order-icons-subwrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .order-icons-subwrapper {
+      flex-direction: row;
+    }
+  }
+  
+  #order {
+    padding: 24px;
+  }
+  
+  .order-icon img {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #subheader {
+      white-space: pre-line;
+    }
+  }

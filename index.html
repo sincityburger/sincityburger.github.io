@@ -17,6 +17,9 @@
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
+  <!-- Custom styles for main body -->
+  <link href="css/body.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -33,6 +36,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#donate">Donate</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#order">Order Now</a>
           </li>
@@ -52,94 +58,48 @@
       <img class="logoHeader" src="img/sin_city_burger_transparent.png" alt="Logo"> 
       <p></p>
       <h1 class ="headerText headerMain">THE BEST BURGERS IN TOWN</h1>
-      <p class="headerText headerSub">Locally Sourced, Crafted with Love</p>
+      <p class="headerText headerSub" id="subheader">Locally Sourced, 
+        Crafted with Love</p>
     </div>
   </header>
   <img onclick="topFunction()" src="img/sin_city_burger_transparent.png" alt="Logo" id="myBtn" title="Go to top">
-  <section id="order">
+  
+  <section id="donate">
+    <div class="gfm-embed" data-url="https://www.gofundme.com/f/help-save-one-another/widget/medium"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+  </section>
+  <section id="order" class="bg-light">
     <div class="container">
-      <!-- <div class="col-lg-8 mx-auto">
-        <p class="lead">our hamburgers come with the veggie burger option, 'meat from plants'</p>
-        <p>& all of our hamburgers are available with gluten free buns</p>
-        <br><br>
-      </div> -->
-      <div class="content-wrapper">
-        <div class="content">
-          <div class="grid-12 columns-12">
-            <div class="row">
-              <div class="col col-12 span-12">
-                <div class="row">
-                  <div class="col col-6 span-6">
-                    <div>
-                      <div class="btn-container">
-                        <div class="btn">
-                          <a href="https://www.ubereats.com/new-york/food-delivery/sin-city-burger" target="_blank">
-                            <img src="img/orderButtons/button-ubereats.png" width=150vw alt="Order with UberEats">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-6 span-6">
-                    <div>
-                      <div class="btn-container">
-                        <div class="btn" >
-                          <a href="https://www.doordash.com/store/sin-city-burger-new-york-828176/en-US" target="_blank">
-                            <img src="img/orderButtons/button-doordash.png" width=150vw alt="Order with DoorDash">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-6 span-6">
-                    <div>
-                      <div class="btn-container">
-                        <div class="btn" >
-                          <a href="https://www.seamless.com/menu/sin-city-burger-311-e-76th-st-new-york/1710047?gclid=CjwKCAjw1cX0BRBmEiwAy9tKHm3vx91Sc15V9FRTXK4frxqx4qtqeXrE5mOXkDAg2HcgVTg0Cix7KhoCWFYQAvD_BwE&amp;gclsrc=aw.ds" target="_blank">
-                            <img src="img/orderButtons/button-seamless.png" width=150vw alt="Order with seamless">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-6 span-6">
-                    <div>
-                      <div class="btn-container">
-                        <div class="btn" >
-                          <a href="https://www.grubhub.com/restaurant/sin-city-burger-311-e-76th-st-new-york/1710047" target="_blank">
-                            <img src="img/orderButtons/button-grubhub.png" width=150vw alt="Order with grubHub">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <h1 class="text-center">Order Online</h1>
+      <div id='order-icons-wrapper'>
+        <div class='order-icons-subwrapper'>
+          <div class="order-icon" id='ubereats-icon'>
+            <a href="https://www.ubereats.com/new-york/food-delivery/sin-city-burger" target="_blank">
+              <img src="img/orderButtons/button-ubereats.png" alt="Order with UberEats">
+            </a>
+          </div>
+          <div class="order-icon" id='doordash-icon'>
+            <a href="https://www.doordash.com/store/sin-city-burger-new-york-828176/en-US" target="_blank">
+              <img src="img/orderButtons/button-doordash.png" alt="Order with DoorDash">
+            </a>
           </div>
         </div>
-      </div>
-      <!-- <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
-          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-          <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul>
-          <div class="btn-group btn-group-lg">
-            <button type="button" class="btn btn-primary">Uber Eats</button>
-            <button type="button" class="btn btn-primary">DoorDash</button>
-            <button type="button" class="btn btn-primary">Seamless</button>
+        <div class='order-icons-subwrapper'>
+          <div class="order-icon" id='seamless-icon'>
+            <a href="https://www.seamless.com/menu/sin-city-burger-311-e-76th-st-new-york/1710047?gclid=CjwKCAjw1cX0BRBmEiwAy9tKHm3vx91Sc15V9FRTXK4frxqx4qtqeXrE5mOXkDAg2HcgVTg0Cix7KhoCWFYQAvD_BwE&amp;gclsrc=aw.ds" target="_blank">
+              <img src="img/orderButtons/button-seamless.png" alt="Order with seamless">
+            </a>
+          </div>
+          <div class="order-icon" id='grubhub-icon'>
+            <a href="https://www.grubhub.com/restaurant/sin-city-burger-311-e-76th-st-new-york/1710047" target="_blank">
+              <img src="img/orderButtons/button-grubhub.png" alt="Order with grubHub">
+            </a>
           </div>
         </div>
-      </div> -->
+      </div>	
     </div>
   </section>
 
-  <section id="menu" class="bg-light">
+  <section id="menu">
     <!-- <div class="container"> -->
       <!--Carousel Wrapper-->
       <h1 class="text-center">Menu</h1>
@@ -251,7 +211,7 @@
     <!-- </div> -->
   </section>
 
-  <section id="contact">
+  <section id="contact" class="bg-light">
     <div class="container">
       <h1 class="text-center">Contact Us</h1>
       <hr>
@@ -262,11 +222,10 @@
     
         <div class="col-sm-5" id="contact2">
             <h4 class="pt-2">Phone</h4>
-            <i style="color:#000"></i><a href="tel:+12123210744"> (212) 321-0744</a><br>
+            <a href="tel:+12123210744"> (212) 321-0744</a><br>
             <h4 class="pt-2">Location</h4>
-            <i style="color:#000"></i> 311 E 76th St<br> New York, NY 10021<br>
+            311 E 76th St<br> New York, NY 10021<br>
             <h4 class="pt-2">Hours</h4>
-            <i style="color:#000"></i> 
             <strong>Monday</strong>     Closed <br>
             <strong>Tues – Thurs</strong>   12pm–9pm <br>
             <strong>Friday - Sat</strong>   12pm–10pm <br>
