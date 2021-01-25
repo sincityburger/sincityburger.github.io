@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website for Sin City Burger">
+    <meta name="author" content="Michael Ibragimchayev (www.chayev.com)">
+    
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+
+    <link rel="icon" href="./favicon.ico" />
+    
+    <!-- Bootstrap core CSS v4.6.0 -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/css/scrolling-nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <!-- Custom styles for main body -->
+    <link rel="stylesheet" type="text/css" href="/css/body.css" />
+</head>
