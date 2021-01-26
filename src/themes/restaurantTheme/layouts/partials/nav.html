@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img class="logoNav" src="img/sin_city_burger_transparent.png" alt="Logo">
+            <span style="color: red">Sin City</span> Burger
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>
