@@ -28,21 +28,21 @@ menu:
       url:  contact
       weight: 20
 
-params:
-  section:
-    menu:
-      - name: S.I.N. Burger
-        url: img/sincityburger_sin.jpeg
-        weight: 5
-      - name: Chicken and Waffles
-        url: img/sincityburger_chickenandwaffle.jpeg
-        weight: 10
-      - name: Pulled Ribeye
-        url: img/sincityburger_pulledribeye.jpeg
-        weight: 15
-      - name: Envy Burger
-        url: img/sincityburger_envy.jpeg
-        weight: 20
-      - name: Temptation Burger
-        url: img/sincityburger_temptation.jpeg
-        weight: 25
+# params:
+#   section:
+#     menu:
+#       - name: S.I.N. Burger
+#         url: img/sincityburger_sin.jpeg
+#         weight: 5
+#       - name: Chicken and Waffles
+#         url: img/sincityburger_chickenandwaffle.jpeg
+#         weight: 10
+#       - name: Pulled Ribeye
+#         url: img/sincityburger_pulledribeye.jpeg
+#         weight: 15
+#       - name: Envy Burger
+#         url: img/sincityburger_envy.jpeg
+#         weight: 20
+#       - name: Temptation Burger
+#         url: img/sincityburger_temptation.jpeg
+#         weight: 25

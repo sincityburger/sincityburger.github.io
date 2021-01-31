@@ -48,80 +48,35 @@
 		<!--/.Indicators-->
 		<!--Slides-->
 		<div class="carousel-inner" role="listbox">
-			<!-- <div class="carousel-item">
-				Mask color
-				<div class="view">
-				  <img class="d-block w-100" src="img/sincityburger_hero.jpeg" alt="Hero Burger">
-				  <div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-				  <h3 class="h3-responsive">Hero Burger</h3>
-				  <p>Hero Burger</p>
-				</div>
-				</div> -->
-			<div class="carousel-item active">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100" src="img/sincityburger_sin.jpeg" alt="S.I.N. Burger">
-					<div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">S.I.N. Burger</h3>
-					<!-- <p>Sin Burger</p> -->
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="view">
-					<img class="d-block w-100" src="img/sincityburger_chickenandwaffle.jpeg" alt="Chicken and Waffles">
-					<div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Chicken and Waffle</h3>
-					<!-- <p>Chicken and Waffle</p> -->
-				</div>
-			</div>
-			<div class="carousel-item">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100" src="img/sincityburger_pulledribeye.jpeg" alt="Pulled Ribeye">
-					<div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Pulled Ribeye</h3>
-					<!-- <p>Pulled Pork Ribeye</p> -->
-				</div>
-			</div>
-			<div class="carousel-item">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100" src="img/sincityburger_envy.jpeg" alt="Envy Burger">
-					<div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Envy Burger</h3>
-					<!-- <p>Envy Burger</p> -->
-				</div>
-			</div>
-			<div class="carousel-item">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100" src="img/sincityburger_temptation.jpeg" alt="Temptation Burger">
-					<div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Temptation Burger</h3>
-					<!-- <p>Temptation Burger</p> -->
-				</div>
-			</div>
-			<!-- <div class="carousel-item">
-				<div class="view">
-				  <img class="d-block w-100" src="img/sincityburger_sweetpotato.jpeg" alt="Sweet Potato">
-				  <div class="mask rgba-black-light"></div>
-				</div>
-				<div class="carousel-caption">
-				  <h3 class="h3-responsive">Sweet Potato Fries</h3>
-				</div>
-				</div> -->
+      {{ range .Site.Data.menuItems.records }}
+        {{ if eq .fields.Category "Burgers" }}
+          {{ if eq .fields.Name "S.I.N. Burger" }}
+            <div class="carousel-item active">
+              <div class="view">
+                {{ range first 1 .fields.Picture }}
+                  <img class="d-block w-100" src="{{ .url }}">
+                {{ end }}
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">{{ .fields.Name }}</h3>
+              </div>
+            </div>
+          {{ else }}
+            <div class="carousel-item">
+              <div class="view">
+                {{ range first 1 .fields.Picture }}
+                  <img class="d-block w-100" src="{{ .url }}">
+                {{ end }}
+                <div class="mask rgba-black-light"></div>
+              </div>
+              <div class="carousel-caption">
+                <h3 class="h3-responsive">{{ .fields.Name }}</h3>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
 		</div>
 		<!--/.Slides-->
 		<!--Controls-->
