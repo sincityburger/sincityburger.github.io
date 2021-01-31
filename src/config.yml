@@ -4,6 +4,8 @@ title: Sin City Burger
 
 theme: restaurantTheme
 
+googleAnalytics: UA-188515233-1
+
 publishdir: "../docs"
 
 disableKinds:

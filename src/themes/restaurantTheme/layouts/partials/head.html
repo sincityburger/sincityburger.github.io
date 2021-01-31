@@ -8,6 +8,10 @@
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
+    {{ if hugo.IsProduction }}
+        {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+    
     <link rel="icon" href="./favicon.ico" />
     
     <!-- Bootstrap core CSS v4.6.0 -->
